@@ -49,3 +49,16 @@ console.log('User Category:', userCategory);
 let isAuthenticated = true;
 let authenticationStatus = isAuthenticated ? 'Authenticated' : 'Not Authenticated';
 console.log("Authentication Status:", authenticationStatus);
+
+
+let role = prompt('Input your role: ', 'Employee');
+
+if(role === 'Employee'){
+    alert('You have full accessed!');
+}else if(role === 'Enrolled Member'){
+    alert('You have accessed to dietary services and 1on1 interaction with a dietician!');
+}else if(role === 'Subscriber'){
+    alert('You have partical accessed to facilitate "Dietary Services" only!');
+}else{
+    alert('You have to enroll or at least subscribe first to avail this facility!');
+}
